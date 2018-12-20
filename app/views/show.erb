@@ -15,7 +15,8 @@
 
 </br>
 <form action="/recipes/<%=@recipe.id%>/delete" method="POST">
-  <input id="hidden" 
+  <input id="hidden" type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete Recipe"
 </form>
 
 </br>
