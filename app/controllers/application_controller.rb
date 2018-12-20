@@ -38,6 +38,7 @@ class ApplicationController < Sinatra::Base
     recipe = Recipe.find(params[:id])
     recipe.update(params)
     redirect '/recipes/#{recipe.id}'
+  end 
   
 
 end
